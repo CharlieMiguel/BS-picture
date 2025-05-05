@@ -1,0 +1,423 @@
+
+body{
+background-color:#2F4F4F ;
+padding: 0px;
+margin: 0px;
+transition: background-color 0.3s, color 0.3s;
+}
+
+.container{
+    position: sticky;
+}
+.navbar li a{
+    color: #FFFAFA;
+    text-decoration: none;
+    font-family:"Cal Sans" ;
+    font-weight: 400;
+}
+
+.navbar li a:hover{
+    text-decoration: underline 2px white;
+}
+
+.navbar li i {
+    color: #FFFAFA;
+    position: relative;
+    left: 4px;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 12px;  
+}
+.navbar {
+    background-color: #1f765e;
+}
+.logo-li{
+    color: #FFFAFA;
+    font-family:"alfa slab one" ;
+    position: absolute;
+    top: -4px;
+}
+.logo-li2{
+    color: #FFFAFA;
+    font-family: "alfa slab one";
+    position: relative;
+    top: 9px;
+    right:20px ;
+}
+#icon{
+    padding-right: 10px;
+}
+
+/*modo oscuro y claro*/
+
+.theme-toggle {
+    position: fixed;
+    top: 13px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+
+
+.dark-mode .theme-toggle {
+    color: #ffd;
+    background-color: #000000;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.theme-toggle:focus {
+    outline: none;
+}
+
+#themeIcon {
+    transition: transform 0.5s;
+}
+
+.rotate {
+    transform: rotate(360deg);
+}
+
+
+body.dark-mode {
+    background-color: #2F4F4F;
+    color: #FFFAFA;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+.dark-mode .navbar {
+    background-color: #1f765e;
+}
+
+.light-mode .navbar {
+    background-color: #3aafa9;
+}
+
+.dark-mode .navbar li a,
+.dark-mode .navbar li i {
+    color: #FFFAFA;
+}
+
+.light-mode .navbar li a,
+.light-mode .navbar li i {
+    color: #000000;
+}
+
+
+.dark-mode .logo-li,
+.dark-mode .logo-li2 {
+    color: #FFFAFA;
+}
+
+.light-mode .logo-li,
+.light-mode .logo-li2 {
+    color: #030303;
+}
+
+
+.theme-toggle {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+}
+
+.light-mode .theme-toggle {
+    color: #000000;
+    background-color: #f0f0f0;
+}
+
+.dark-mode .theme-toggle {
+    color: #ffffff;
+    background-color: #2F4F4F;
+}
+
+.light-mode .card{
+    background-color: #3aafa9;
+}
+
+.light-mode .navbar li a:hover {
+    text-decoration: underline 2px black;
+}
+
+.light-mode .footer{
+    background-color:#3aafa9 ;
+}
+
+.light-mode .footer-mb{
+
+    background-color: #3aafa9;
+}
+.light-mode .footer-mb2{
+
+    background-color: #3aafa9;
+}
+
+
+
+/*cartas de imagenes*/
+.container-cards{
+    height: auto;
+    width: 96%;
+    margin: 30px;
+
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+}
+
+.card{
+    margin: 10px;
+    padding: 20px;
+    background-color: #006064;
+    border-radius: 10px;
+    width: 275px;
+}
+/*botones*/
+.btn {
+    width: 275px;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  .btn:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .btn:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  .btn::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+
+img{
+
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: auto;
+}
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  .btn:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+ 
+  @media (max-width: 1400px) {
+    .footer-mb{
+        display: none;
+    }
+    .footer-mb2{
+        display: none;
+    }
+    
+  }
+
+  @media (max-width: 1024px) {
+    .container-cards {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));}
+
+    }
+    
+
+    
+
+@media (max-width: 768px) {
+    .container-cards {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .footer-mb{
+        display: flex;
+    }
+    .footer-mb2{
+        display: none;
+    }
+}
+    
+
+
+    
+
+
+@media (max-width: 480px) {
+    .card {
+        padding: 15px;
+    }
+    
+    .btn {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .footer-mb{
+        display: none;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .footer-mb2{
+        display: flex;
+    }
+}
+
+video{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+section {
+    transition: opacity 0.5s ease;
+}
+
+.footer{
+background-color:#1f765e;
+;
+margin: 15px;
+width: auto;
+height:80px;
+margin-left: 0;
+margin-right: 0;
+}
+
+.footer .pp{
+    font-family: "lobster";
+    position: relative;
+    top: 20px;
+    left: 370px;
+    font-size: 30px;
+}
+
+.footer p{
+    position: absolute;
+    font-size: 30px;
+    top: 1266%;
+    left: 340px;
+}
+
+.footer-mb{
+    background-color: #1f765e;
+}
+
+.footer-mb .ppp{
+    font-family: "lobster";
+    position: relative;
+    color: white;
+    left: 82px;
+    top: -20px;
+    font-size: 18px;
+}
+
+.footer-mb p{
+    font-size: 18px;
+    position: relative;
+    top: 19px;
+    left: 59px;
+}
+
+
+.footer-mb2{
+    background-color: #1f765e;
+}
+
+.footer-mb2 .ppp{
+    font-family: "lobster";
+    position: relative;
+    color: white;
+    left: 45px;
+    top: -20px;
+    font-size: 18px;
+}
+
+.footer-mb2 p{
+    font-size: 18px;
+    position: relative;
+    top: 19px;
+    left: 25px;
+}
+
+
